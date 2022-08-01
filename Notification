@@ -150,11 +150,8 @@ function Notification:Notify(nofdebug, middledebug, all)
 
 			local Stilthere = true
 			local function Unchecked()
-				pcall(function()
-					all.Callback(false)
-				end)
 				ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0.2)
-
+				
 				wait(0.2)
 				ambientShadow:Destroy()
 				Stilthere = false
