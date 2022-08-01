@@ -1,0 +1,15 @@
+local GUI = game:GetService("CoreGui").RobloxGui:FindFirstChild("Eternity_Notifications")
+if not GUI then
+	local Eternity_Notifications = Instance.new("ScreenGui")
+	local Eternity_NofiticationUIListLayouts = Instance.new("UIListLayout")
+	Eternity_Notifications.Name = "Eternity_Notifications"
+	Eternity_Notifications.Parent = game.CoreGui.RobloxGui
+	Eternity_Notifications.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	Eternity_Notifications.ResetOnSpawn = false
+
+	Eternity_NofiticationUIListLayouts.Name = "Eternity_NotificationUIListLayout"
+	Eternity_NofiticationUIListLayouts.Parent = Eternity_Notifications
+	Eternity_NofiticationUIListLayouts.HorizontalAlignment = Enum.HorizontalAlignment.Right
+	Eternity_NofiticationUIListLayouts.SortOrder = Enum.SortOrder.LayoutOrder
+	Eternity_NofiticationUIListLayouts.VerticalAlignment = Enum.VerticalAlignment.Bottom
+end
